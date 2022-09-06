@@ -1,11 +1,13 @@
 @import "./variables/sizes.scss";
 @import "./variables/colors.scss";
+
 .discover-layout {
   position: absolute !important;
   margin-top: 100px;
   left: 326px + 45px;
   top: 73px;
   width: 70%;
+
   .title {
     margin-top: 59px;
     margin-left: 36px;
@@ -57,6 +59,7 @@
   .search-input:focus-visible {
     border: 1px solid #00667180;
   }
+
   .search-input:hover {
     transition-delay: 0.1s;
     background: rgba(1, 69, 77, 0.502);
@@ -108,12 +111,14 @@
   .hr-theme-slash-2 {
     display: flex;
     margin-top: 95px;
+
     .hr-line {
       width: 100%;
       position: relative;
       margin: 15px;
       border-bottom: 1px solid rgba(16, 233, 140, 0.3);
     }
+
     .hr-icon {
       position: relative;
       top: 3px;
@@ -131,12 +136,12 @@
     -webkit-scrollbar: 0.4rem;
   }
 
-
   //   Responsive Design
   @media (max-width: $md) {
     left: 32px;
     top: 35px;
     width: 90%;
+
     .social-user-info {
       display: none;
     }
@@ -156,13 +161,14 @@
     }
 
     .influencers {
-        display: none;
+      display: none;
     }
   }
 
   @media (min-width: $md) {
-    left: $sidebar-md + 20px;
-    width: 71%;
+    left: 24vw;
+    width: 70%;
+
     .user-info {
       height: 250px;
       top: 23px;
@@ -188,12 +194,14 @@
     .user-info {
       margin-left: 47px;
     }
+
     width: 75%;
   }
 
   @media (min-width: $xl) {
-    left: $sidebar-xl + 30px;
+    left: 24vw;
     width: 75%;
+
     .user-info {
       height: 300px;
       top: 23px;
@@ -215,8 +223,9 @@
   }
 
   @media (min-width: $xxl) {
-    left: $sidebar-xxl + 40px;
+    left: 20vw;
     width: 74%;
+
     .user-info {
       height: 341px;
       top: 23px;

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { getPosts } from "../redux/actions/fooActions";
 import { wrapper } from "../redux";
 import Layout from "../components/layout/index";
-import {Modal, Button} from 'react-bootstrap';
+import { Modal, Button } from "react-bootstrap";
 import { checkServerSideCookie } from "../redux/actions/authActions";
-import '../styles/scss/index.module.scss';
+import "../styles/scss/index.module.scss";
 
 const Index = ({ foo, token }) => {
   const [show, setShow] = useState(false);

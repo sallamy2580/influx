@@ -1,13 +1,12 @@
-@import 'bootstrap/scss/bootstrap.scss';
-@import './variables/sizes.scss';
-@import './variables/colors.scss';
+@import "bootstrap/scss/bootstrap.scss";
+@import "./variables/sizes.scss";
+@import "./variables/colors.scss";
 
-@import './background.scss';
-@import './topnavbar.scss';
-@import './sidebar.scss';
-@import './discover.module.scss';
-@import './influencercard.scss';
-
+@import "./background.scss";
+@import "./topnavbar.scss";
+@import "./sidebar.scss";
+@import "./discover.module.scss";
+@import "./influencercard.scss";
 
 .marketing {
   margin: 4rem 0;
@@ -30,24 +29,17 @@
   cursor: pointer;
 }
 
-
-
 @media (min-width: $xxl) {
-
 }
 
 @media (min-width: $xl) {
-
 }
 
 @media (min-width: $md) {
-  
 }
 
 @media (min-width: $sm) {
-  
 }
 
 @media (min-width: $xs) {
-  
 }

@@ -2,11 +2,10 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
 
-const Background = ({children}) => {
+const Background = ({ children }) => {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-  }, []);
+  useEffect(() => {}, []);
   return (
     <>
       <div className="background-layout">

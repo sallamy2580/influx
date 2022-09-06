@@ -1,19 +1,237 @@
 .sidebar-layout {
-    position: absolute;
-    background-color:rgba(8, 33, 41, 0.5);
-    color: white;
-    width: 300px;
-    height: -webkit-fill-available;
-    background-blend-mode: soft-light;
-    backdrop-filter: blur(15px);
-    margin-top: 6vh;
-    z-index: 2;
+  position: absolute;
+  background-color: rgba(8, 33, 41, 0.5);
+  color: white;
+  width: 15vw;
+  height: -webkit-fill-available;
+  background-blend-mode: soft-light;
+  backdrop-filter: blur(15px);
+  margin-top: 6vh;
+  z-index: 2;
 
-    .compaign-layout {
-      z-index: 1;
+  .compaign-layout {
+    z-index: 1;
+    position: relative;
+    margin-top: 150px;
+    height: 67px;
+  }
+
+  .menu-item-subject {
+    font-size: $font-md;
+    color: white;
+    margin-left: 19.5px;
+    position: absolute;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .log-out-subject {
+    font-size: $font-md;
+    color: white;
+    margin-left: 19.5px;
+    position: absolute;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .menu-item-list {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+    height: 5vh;
+  }
+
+  .menu-item-list:hover {
+    cursor: pointer;
+  }
+
+  .menu-item-area:hover {
+    cursor: pointer !important;
+    background: $inf-page-active-color;
+  }
+
+  .below-menu-item-list {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .compaign-layout:hover {
+    background-color: $inf-page-active-color !important;
+    cursor: pointer;
+  }
+
+  .coming-soon-menu {
+    margin-top: 40%;
+  }
+
+  .coming-soon-menu-subject {
+    font-size: $font-md;
+    color: white;
+    margin-left: 19.5px;
+    position: absolute;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .booster-menu-list {
+    margin-left: 63px;
+    margin-top: 27px;
+    font-size: $font-md;
+    font-weight: 600;
+    line-height: 30px;
+    opacity: 0.8;
+    color: white;
+  }
+
+  .menu-item {
+    position: relative !important;
+    margin-left: 18%;
+  }
+
+  .log-out-item {
+    width: 27px;
+    height: 30px;
+    position: relative !important;
+    margin-left: 25%;
+  }
+
+  .coming-menu-item {
+    position: relative !important;
+  }
+
+  .log-out-item-list {
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+  }
+
+  @media (max-width: $md) {
+    display: none;
+    margin-top: 53px;
+    width: 34vw;
+    .menu-item-list {
+      width: 100%;
+    }
+    .below-menu-item-list {
+      width: 100%;
+      margin-top: 2vh;
+      height: 6vh;
+    }
+    .menu-item {
+      margin-left: 1vw;
+      width: 4vw;
+      height: 3vh;
+    }
+    .menu-item-subject {
+      margin-left: 3vw;
+    }
+    .coming-menu-item {
+      width: 4vw;
+      height: 3vh;
+    }
+    .booster-menu-engage {
+      width: 100%;
+    }
+    .booster-menu {
+      width: 100%;
+    }
+    .booster-menu-list {
+      margin-left: 0px;
+    }
+    .menu-item-subject {
+      font-size: $font-sm;
+    }
+    .coming-soon-menu-subject {
+      font-size: $font-sm;
+      margin-left: 3vw;
+    }
+    .log-out-item {
+      width: 4vw;
+      height: 3vh;
+      margin-left: 4vw;
+    }
+  }
+
+  @media (min-width: $md) {
+    width: 20vw;
+    .menu-item {
+      margin-left: 0vw;
+      width: 2.6vw;
+      height: 3vh;
+    }
+
+    .menu-item-subject {
+      font-size: $font-sm;
+      color: white;
+      margin-left: 1.2vw;
+      position: absolute;
+      font-weight: 400;
+      line-height: 25px;
+    }
+
+    .coming-menu-item {
+      width: 2.9vw;
+      height: 3.2vh;
       position: relative;
-      margin-top: 150px;
-      height: 67px;
+      margin-left: 2.2vw;
+    }
+
+    .log-out-item {
+      width: 2.9vw;
+      height: 3.2vh;
+      position: relative;
+      margin-left: 2.5vw;
+    }
+
+    .coming-soon-menu-subject {
+      font-size: $font-sm;
+      color: white;
+      margin-left: 1.2vw;
+      position: absolute;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    .booster-menu-list {
+      margin-left: 2.9vw;
+      margin-top: 1.5vh;
+      font-size: $font-sm;
+      font-weight: 500;
+      line-height: 20px;
+      opacity: 0.8;
+      color: white;
+    }
+
+    .log-out-subject {
+      font-size: $font-md;
+      color: white;
+      margin-left: 3.1vw;
+      position: absolute;
+      font-weight: 400;
+      line-height: 23px;
+    }
+
+    .menu-item-area {
+      padding-top: 2.5vh;
+      padding-bottom: 2.5vh;
+    }
+
+    .below-menu-item-list {
+      margin-top: 3.1vh;
+      height: 6.2vh;
+    }
+  }
+
+  @media (min-width: $xl) {
+    width: 20vw;
+    .menu-item {
+      margin-left: 2.6vw;
+      width: 1.8vw;
+      height: 3vh;
     }
 
     .menu-item-subject {
@@ -22,7 +240,109 @@
       margin-left: 19.5px;
       position: absolute;
       font-weight: 400;
+      line-height: 25px;
+    }
+
+    .coming-menu-item {
+      margin-left: 2.6vw;
+      width: 1.8vw;
+      height: 3vh;
+    }
+
+    .log-out-item {
+      width: 25px !important;
+      height: 27px;
+      position: relative !important;
+      margin-left: 60.5px;
+    }
+
+    .coming-soon-menu-subject {
+      font-size: $font-md;
+      color: white;
+      margin-left: 19.5px;
+      position: absolute;
+      font-weight: 600;
+      line-height: 25px;
+    }
+
+    .booster-menu-list {
+      margin-left: 30px;
+      margin-top: 27px;
+      font-size: $font-md;
+      font-weight: 500;
+      line-height: 25px;
+      opacity: 0.8;
+      color: white;
+    }
+
+    .log-out-subject {
+      font-size: $font-lg;
+      color: white;
+      margin-left: 19.5px;
+      position: absolute;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    .menu-item-area {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      margin-top: 30px;
+    }
+
+    .below-menu-item-list {
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: $xxl) {
+    width: 15vw;
+    .menu-item {
+      margin-left: 18%;
+      width: 1.6vw;
+      height: 3vh;
+    }
+
+    .menu-item-subject {
+      font-size: $font-lg;
+      color: white;
+      margin-left: 1.3vw;
+      position: absolute;
+      font-weight: 400;
       line-height: 30px;
+    }
+
+    .coming-menu-item {
+      width: 27px;
+      height: 30px;
+      position: relative;
+      margin-left: 46.51px;
+    }
+
+    .coming-soon-menu-subject {
+      font-size: $font-lg;
+      color: white;
+      margin-left: 19.5px;
+      position: absolute;
+      font-weight: 600;
+      line-height: 25px;
+    }
+
+    .booster-menu-list {
+      margin-left: 45px;
+      margin-top: 27px;
+      font-size: $font-lg;
+      font-weight: 600;
+      line-height: 30px;
+      opacity: 0.8;
+      color: white;
+    }
+
+    .log-out-item {
+      width: 27px !important;
+      height: 30px;
+      position: relative !important;
+      margin-left: 25%;
     }
 
     .log-out-subject {
@@ -34,303 +354,13 @@
       line-height: 30px;
     }
 
-    .menu-item-list {
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      margin-top: 30%;
-      height: 67px;
-    }
-
-    .menu-item-list:hover {
-      cursor: pointer;
-    }
-
-    .menu-item-area:hover {
-      cursor: pointer !important;
-      background: $inf-page-active-color;
+    .menu-item-area {
+      padding-top: 2.2vh;
+      padding-bottom: 2.2vh;
     }
 
     .below-menu-item-list {
-      margin-top: 30px;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      height: 67px;
+      margin-top: 40px;
     }
-
-    .compaign-layout:hover {
-      background-color: $inf-page-active-color !important;
-      cursor: pointer !important;
-    }
-
-    .coming-soon-menu {
-      margin-top: 40%;
-    }
-
-    .coming-soon-menu-subject {
-      font-size: $font-md !important;
-      color: white;
-      margin-left: 19.5px;
-      position: absolute;
-      font-weight: 600;
-      line-height: 25px;
-    }
-
-    .booster-menu-list {
-      margin-left: 63px;
-      margin-top: 27px;
-      font-size: $font-md !important;
-      font-weight: 600;
-      line-height: 30px;
-      opacity: 0.8;
-      color: white;
-    }
-
-    .menu-item {
-      width: 27px !important;
-      height: 30px;
-      position: relative !important;
-      margin-left: 18%;
-    }
-
-    .log-out-item {
-      width: 27px !important;
-      height: 30px;
-      position: relative !important;
-      margin-left: 25%;
-    }
-
-    .coming-menu-item {
-      width: 27px !important;
-      height: 30px;
-      position: relative !important;
-      margin-left: 64.51px;
-    }
-
-    .log-out-item-list {
-      margin-top: 70px;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      height: 67px;
-    }
-
-    @media (max-width: $md){
-      display: none;
-      margin-top: 53px;
-    }
-
-    @media (min-width: $md) {
-      width: 200px;
-      .menu-item {
-        margin-left: 20px;
-        width: 20px;
-        height: 22px;
-      }
-
-      .menu-item-subject {
-        font-size: $font-sm;
-        color: white;
-        margin-left: 19.5px;
-        position: absolute;
-        font-weight: 400;
-        line-height: 25px;
-      }
-
-      .coming-menu-item {
-        width: 20px;
-        height: 22px;
-        position: relative;
-        margin-left: 20px;
-      }
-
-      .log-out-item {
-        width: 20px !important;
-        height: 22px;
-        position: relative !important;
-        margin-left: 40.5px;
-      }
-
-      .coming-soon-menu-subject {
-        font-size: $font-sm !important;
-        color: white;
-        margin-left: 19.5px;
-        position: absolute;
-        font-weight: 400;
-        line-height: 20px;
-      }
-
-      .booster-menu-list {
-        margin-left: 15px;
-        margin-top: 27px;
-        font-size: $font-sm !important;
-        font-weight: 500;
-        line-height: 20px;
-        opacity: 0.8;
-        color: white;
-      }
-
-      .log-out-subject {
-        font-size: $font-md;
-        color: white;
-        margin-left: 19.5px;
-        position: absolute;
-        font-weight: 200;
-        line-height: 23px;
-      }
-
-      .menu-item-area {
-        padding-top: 15px;
-        padding-bottom: 15px;
-      }
-
-      .below-menu-item-list {
-        margin-top: 20px;
-        height: 50px;
-      }
-
-
-    }
-
-    @media (min-width: $xl) {
-      width: 250px;
-      .menu-item {
-        margin-left: 30px;
-        width: 25px;
-        height: 27px;
-      }
-
-      .menu-item-subject {
-        font-size: $font-md;
-        color: white;
-        margin-left: 19.5px;
-        position: absolute;
-        font-weight: 400;
-        line-height: 25px;
-      }
-
-      .coming-menu-item {
-        width: 25px;
-        height: 27px;
-        position: relative;
-        margin-left: 30px;
-      }
-
-      .log-out-item {
-        width: 25px !important;
-        height: 27px;
-        position: relative !important;
-        margin-left: 60.5px;
-      }
-
-      .coming-soon-menu-subject {
-        font-size: $font-md !important;
-        color: white;
-        margin-left: 19.5px;
-        position: absolute;
-        font-weight: 600;
-        line-height: 25px;
-      }
-
-      .booster-menu-list {
-        margin-left: 30px;
-        margin-top: 27px;
-        font-size: $font-md !important;
-        font-weight: 500;
-        line-height: 25px;
-        opacity: 0.8;
-        color: white;
-      }
-
-      .log-out-subject {
-        font-size: $font-md;
-        color: white;
-        margin-left: 19.5px;
-        position: absolute;
-        font-weight: 500;
-        line-height: 20px;
-      }
-
-      .menu-item-area {
-        padding-top: 18px;
-        padding-bottom: 18px;
-        margin-top: 30px;
-      }
-
-      .below-menu-item-list {
-        margin-top: 30px;
-      }
-    }
-
-    @media (min-width: $xxl) {
-      width: 300px;
-      .menu-item {
-        margin-left: 18%;
-        width: 27px;
-        height: 30px;
-      }
-
-      .menu-item-subject {
-        font-size: $font-md;
-        color: white;
-        margin-left: 19.5px;
-        position: absolute;
-        font-weight: 400;
-        line-height: 30px;
-      }
-
-      .coming-menu-item {
-        width: 27px;
-        height: 30px;
-        position: relative;
-        margin-left: 46.51px;
-      }
-
-      .coming-soon-menu-subject {
-        font-size: $font-md !important;
-        color: white;
-        margin-left: 19.5px;
-        position: absolute;
-        font-weight: 600;
-        line-height: 25px;
-      }
-
-      .booster-menu-list {
-        margin-left: 45px;
-        margin-top: 27px;
-        font-size: $font-md !important;
-        font-weight: 600;
-        line-height: 30px;
-        opacity: 0.8;
-        color: white;
-      }
-
-      .log-out-item {
-        width: 27px !important;
-        height: 30px;
-        position: relative !important;
-        margin-left: 25%;
-      }
-
-      .log-out-subject {
-        font-size: $font-md;
-        color: white;
-        margin-left: 19.5px;
-        position: absolute;
-        font-weight: 400;
-        line-height: 30px;
-      }
-
-      .menu-item-area {
-        padding-top: 25px;
-        padding-bottom: 25px;
-      }
-
-      .below-menu-item-list {
-        margin-top: 40px;
-      }
-    }
-
-
   }
+}
