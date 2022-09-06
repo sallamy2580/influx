@@ -1,0 +1,92 @@
+.top-navbar-layout {
+    background-color: $inf-header-color;
+    position: absolute;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+      
+    .btn-ls-influencers {
+      float: right;
+      width: 11vw;
+      height: 3.2vh;
+      margin-top: 1.7vh;
+      margin-right: 58px;
+      border-radius: 0px;
+      background-color: $primary-color !important;
+      border: 0px;
+      color: black;
+    }
+
+    .site-logo {
+        float: left !important;
+        position: absolute !important;
+        width: 11vw;
+        height: 6vh;
+        margin-left: 2vw;
+      }
+
+      .hamburger-icon {
+        display: none;
+      }
+    
+      //Responsive Design
+    @media (max-width: $md){
+      height: 53px;
+
+      .site-logo {
+        float: left !important;
+        position: absolute !important;
+        width: 150px;
+        height: 55.62px !important;
+        margin-left: 135px !important;
+        top: -2px !important;
+        display: block !important;
+      }
+
+      .btn-ls-influencers {
+        display: none;
+      }
+
+      .hamburger-icon {
+        display: block;
+        width: 26px !important;
+        height: 10px !important;
+        margin-top: 24px;
+        margin-left: 33px;
+      }
+      .hamburger-icon:hover {
+        cursor: pointer;
+      }
+    }
+
+    @media (min-width: $md) {
+      .list-influencers {
+        margin-left: -4vw;
+        margin-top: -1vh;
+        font-size: 10px;
+      }
+      
+    }
+
+    @media (min-width: $xl) {
+      
+    }
+
+    @media (min-width: $xxl) {
+      .site-logo {
+        float: left !important;
+        position: absolute !important;
+        width: 11vw;
+        height: 6vh;
+        margin-left: 2vw;
+      }
+
+      .list-influencers {
+        margin-left: -4vw;
+        margin-top: -1.7vh;
+        font-size: $font-lg;
+      }
+    }
+
+  }

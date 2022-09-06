@@ -1,0 +1,34 @@
+// $primary-color: #64ff00;
+// $bg-color: rgba(0, 0, 0, 0.4);
+@import './variables/colors.scss';
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.borderBottom {
+  border-bottom: 1px solid $primary-color;
+}
+
+.title {
+  color: $primary-color;
+  margin-top: 5.1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid $primary-color;
+}
+
+.bgTrans {
+  background-color: $secondary-color;
+}
+
+.floatEnd {
+  float: right !important;
+}

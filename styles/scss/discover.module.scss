@@ -1,0 +1,240 @@
+@import "./variables/sizes.scss";
+@import "./variables/colors.scss";
+.discover-layout {
+  position: absolute !important;
+  margin-top: 100px;
+  left: 326px + 45px;
+  top: 73px;
+  width: 70%;
+  .title {
+    margin-top: 59px;
+    margin-left: 36px;
+    font-weight: 600;
+    font-size: $font-xl;
+    color: white;
+  }
+
+  .social-user-info {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-user-info-merged {
+    width: 100%;
+    display: none;
+    height: 794px;
+    background-color: $inf-modal-color;
+    margin-top: 54px;
+    border-radius: 10px;
+  }
+
+  .user-info {
+    height: 341px;
+    top: 23px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: $inf-modal-color;
+  }
+
+  .social-link {
+    background-color: $inf-modal-color;
+    height: 342px;
+    top: 23px;
+    border-radius: 10px;
+  }
+
+  .search-input {
+    background: $inf-disable-color;
+    color: white;
+    width: 68.7%;
+    height: 40px;
+    margin-top: 50px;
+    border: 1px solid #00667180;
+    border-radius: 5px;
+  }
+
+  .search-input:focus-visible {
+    border: 1px solid #00667180;
+  }
+  .search-input:hover {
+    transition-delay: 0.1s;
+    background: rgba(1, 69, 77, 0.502);
+    cursor: pointer;
+  }
+
+  .sort-icon {
+    float: right;
+    margin-top: 11px;
+    width: 13px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  .sort-subject {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .form-check {
+    width: 90%;
+    height: 30px;
+    background: rgba(18, 75, 82, 0.5);
+    border-radius: 5px;
+    color: #cccccc;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-check-label {
+    margin-top: 3px;
+    margin-left: auto;
+  }
+
+  .form-check-input {
+    background-color: rgba(18, 75, 82, 0.5);
+    border-color: $primary-color;
+    margin-top: 7px;
+    margin-left: auto;
+  }
+
+  .sort-filters {
+    margin-right: 0px;
+  }
+
+  .hr-theme-slash-2 {
+    display: flex;
+    margin-top: 95px;
+    .hr-line {
+      width: 100%;
+      position: relative;
+      margin: 15px;
+      border-bottom: 1px solid rgba(16, 233, 140, 0.3);
+    }
+    .hr-icon {
+      position: relative;
+      top: 3px;
+      color: #ff0000;
+    }
+  }
+
+  .influencers {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    -webkit-scrollbar: 0.4rem;
+  }
+
+
+  //   Responsive Design
+  @media (max-width: $md) {
+    left: 32px;
+    top: 35px;
+    width: 90%;
+    .social-user-info {
+      display: none;
+    }
+
+    .social-user-info-merged {
+      display: block;
+    }
+
+    .search-input {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sort-filters {
+      display: none;
+    }
+
+    .influencers {
+        display: none;
+    }
+  }
+
+  @media (min-width: $md) {
+    left: $sidebar-md + 20px;
+    width: 71%;
+    .user-info {
+      height: 250px;
+      top: 23px;
+      margin-left: 30px;
+      border-radius: 10px;
+    }
+
+    .social-link {
+      height: 250px;
+      top: 23px;
+      border-radius: 10px;
+    }
+
+    .title {
+      margin-top: 59px;
+      margin-left: 25px;
+      font-weight: 500;
+      font-size: $font-lg;
+    }
+  }
+
+  @media (min-width: $lg) {
+    .user-info {
+      margin-left: 47px;
+    }
+    width: 75%;
+  }
+
+  @media (min-width: $xl) {
+    left: $sidebar-xl + 30px;
+    width: 75%;
+    .user-info {
+      height: 300px;
+      top: 23px;
+      margin-left: 25px;
+      border-radius: 10px;
+    }
+
+    .social-link {
+      height: 300px;
+      top: 23px;
+      border-radius: 10px;
+    }
+
+    .title {
+      margin-top: 59px;
+      margin-left: 30px;
+      font-weight: 500;
+    }
+  }
+
+  @media (min-width: $xxl) {
+    left: $sidebar-xxl + 40px;
+    width: 74%;
+    .user-info {
+      height: 341px;
+      top: 23px;
+      margin-left: 50px;
+      border-radius: 10px;
+    }
+
+    .social-link {
+      height: 342px;
+      top: 23px;
+      border-radius: 10px;
+    }
+
+    .title {
+      margin-top: 59px;
+      margin-left: 36px;
+      font-weight: 600;
+      font-size: $font-xl;
+    }
+  }
+}

@@ -1,0 +1,307 @@
+@import './variables/sizes.scss';
+@import './variables/colors.scss';
+.influencer-card {
+    width: 22vw;
+    background: $inf-modal-color;
+    height: 65vh;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    .name-area {
+        height: 8vh;
+        background: $inf-card-header-color;
+        color: #FFFFFF;
+        font-size: $font-lg
+    }
+
+    .name {
+        margin-top: 1vw;
+        margin-left: 10.4vw;
+    }
+
+    .personnel-info {
+        padding-top: 10vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        display: flex;
+    }
+
+    .personnel-symbol {
+        color: white;
+        font-weight: 400;
+        font-size: $font-lg;
+        align-items: center;
+        line-height: 21px;
+    }
+
+    .user-symbol-link {
+        margin-left: 3vh;
+        margin-top: 1vh;
+    }
+        
+    .youtube-dot {
+    height: 37px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+    }
+
+    .youtube-dot:hover {
+    cursor: pointer;
+    transition-delay: 0.1s;
+    background: rgba(255, 255, 255, 0.912);
+    }
+
+    .dot {
+    height: 37px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0.8vw;
+    border: none;
+    }
+
+    .dot:hover {
+    cursor: pointer;
+    transition-delay: 0.1s;
+    background: rgba(255, 255, 255, 0.912);
+    }
+
+    .personnel-social-link {
+    width: 10vw;
+    height: 5vh;
+    margin-top: 3vh;
+    }
+
+    .youtube-icon {
+    width: 0.1vw;
+    height: 0.1vh;
+    }
+
+    .social-link-icon  {
+    width: 23px;
+    height: 20px;
+    }
+
+    .select-image {
+        width: 100%;
+    }
+
+    .border-line {
+        margin-top: 1vh;
+        width: 80%;
+        position: relative;
+        border-bottom: 2px solid #FFFFFF4D;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .followers {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 2.7vh;
+        color: white;
+        margin-top: 5vh;
+        font-size: $font-lg
+      }
+
+      .followers-letter {
+        float: left;
+      }
+
+      .followers-count {
+        float: right;
+        color: $primary-color !important;
+      }
+
+      .select {
+            margin-top: 5.5vh;
+        }
+
+     //   Responsive Design
+    @media (max-width: $md){
+    }
+      
+  
+    @media (min-width: $md) {
+        .youtube-dot {
+            height: 28px;
+            width: 27px;
+        }
+
+        .dot {
+            height: 26px;
+            width: 25px;
+        }
+
+        .social-link-icon {
+            width: 13px;
+            height: 12px;
+        }
+
+        .user-picture {
+            width: 50px;
+            height: 50px;
+        }
+
+        .personnel-symbol {
+            font-size: $font-md;
+        }
+
+        .personnel-info {
+            padding-left: 2vh;
+            padding-right: 2vh;
+            padding-top: 7vh;
+        }
+
+        .user-symbol-link {
+            margin-left: 1vw;
+        }
+
+        .name {
+            margin-top: 2vh;
+            margin-left: 9.4vw;
+            font-size: $font-md;
+        }
+
+        .personnel-social-link {
+            margin-top: 1vh;
+        }
+
+        .youtube-dot {
+            height: 17px;
+            width: 17px;
+        }
+
+        .dot {
+            height: 17px;
+            width: 17px;
+        }
+
+        .social-link-icon {
+            width: 10px;
+            height: 10px;
+            margin-top: -10px;
+            margin-left: -2px;
+        }
+
+    }
+  
+    @media (min-width: $lg) {
+    .youtube-dot {
+        height: 28px;
+        width: 27px;
+    }
+
+    .dot {
+        height: 26px;
+        width: 25px;
+    }
+
+    .social-link-icon {
+        width: 13px;
+        height: 13px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .user-picture {
+       width: 78px;
+       height: 78px;
+    }
+
+    .personnel-symbol {
+       font-weight: 400;
+       font-size: $font-lg;
+       align-items: center;
+       line-height: 21px;
+    }
+
+    .name {
+        margin-top: 2vh;
+    }
+
+    .personnel-info {
+        padding-top: 6vh;
+        padding-left: 1vw;
+        padding-right: 5vh;
+    }
+
+    .user-symbol-link {
+        margin-left: 3vh;
+        margin-top: 1vh;
+    }
+
+    .name {
+        margin-top: 1vw;
+        margin-left: 10.4vw;
+    }
+
+    .personnel-social-link {
+        width: 10vw;
+        height: 5vh;
+        margin-top: 3vh;
+        }
+    }
+  
+    @media (min-width: $xl) {
+        .youtube-dot {
+        height: 28px;
+        width: 27px;
+        }
+
+        .dot {
+        height: 26px;
+        width: 25px;
+        }
+
+        .social-link-icon {
+        width: 13px;
+        height: 12px;
+        }
+
+        .user-picture {
+        width: 78px;
+        height: 77px;
+        }
+    }
+  
+    @media (min-width: $xxl) {
+        .youtube-dot {
+        height: 37px;
+        width: 40px;
+        }
+
+        .dot {
+        height: 37px;
+        width: 40px;
+        }
+
+        .social-link-icon  {
+        width: 23px;
+        height: 20px;
+        }
+
+        .user-picture {
+        width: 113px;
+        height: 107px;
+        }
+
+        .name {
+        font-size: $font-lg;
+        }
+
+
+        .personnel-symbol {
+        font-size: $font-lg;
+        }
+
+        .user-symbol-link {
+        margin-left: 3vh;
+        margin-top: 1vh;
+    }
+    }
+}

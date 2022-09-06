@@ -1,0 +1,198 @@
+.background-layout {
+    position: relative;
+    height: 1919px;
+    background-color: $secondary-color;
+    width: auto;
+    .bg_fragement1 {
+        position: absolute;
+    }
+    .bg_fragement2 {
+        position: absolute;
+    }
+    .bg_fragement3 {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .bg_fragement4 {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .bg_fragement5 {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .bg_fragement6 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+    .bg_fragement7 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+    .bg_fragement8 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    @media (max-width: $md){
+      .bg_fragement1 {
+        width: 55%;
+      }
+      .bg_fragement2 {
+          width: 55%;
+      }
+      .bg_fragement3 {
+          width: 55%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement4 {
+          width: 35%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement5 {
+          width: 35%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement6 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+      .bg_fragement7 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+      .bg_fragement8 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+    }
+
+    @media (min-width: $md) {
+      .bg_fragement1 {
+        width: 55%;
+      }
+      .bg_fragement2 {
+          width: 55%;
+      }
+      .bg_fragement3 {
+          width: 55%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement4 {
+          width: 35%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement5 {
+          width: 35%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement6 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+      .bg_fragement7 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+      .bg_fragement8 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+    }
+
+    @media (min-width: $xl) {
+      .bg_fragement1 {
+        width: 55%;
+      }
+      .bg_fragement2 {
+          width: 55%;
+      }
+      .bg_fragement3 {
+          width: 55%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement4 {
+          width: 35%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement5 {
+          width: 35%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement6 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+      .bg_fragement7 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+      .bg_fragement8 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+    }
+
+    @media (min-width: $xxl) {
+      .bg_fragement1 {
+          width: 55%;
+      }
+      .bg_fragement2 {
+          width: 55%;
+      }
+      .bg_fragement3 {
+          width: 55%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement4 {
+          width: 35%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement5 {
+          width: 35%;
+          bottom: 0px;
+          left: 0px;
+      }
+      .bg_fragement6 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+      .bg_fragement7 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+      .bg_fragement8 {
+          width: 25%;
+          bottom: 0px;
+          right: 0px;
+      }
+    }
+}
