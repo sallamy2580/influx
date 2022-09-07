@@ -21,7 +21,7 @@ const TopNavBar = ({ showSideBar }) => {
             style={{ position: "relative" }}
           >
             <span className="list-influencers" style={{ position: "absolute" }}>
-              List influencers
+              List your influencers
             </span>
           </Button>
         </div>

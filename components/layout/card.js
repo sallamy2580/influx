@@ -12,7 +12,7 @@ const Card = ({ name, followers, icon }) => {
   useEffect(() => {}, []);
   return (
     <>
-      <div className="influencer-card">
+      <div className="col-sm-11 col-md-11 col-lg-9 col-xxl-3 influencer-card">
         <div className="name-area">
           <label className="name">{name}</label>
         </div>
@@ -52,19 +52,20 @@ const Card = ({ name, followers, icon }) => {
             <span className="followers-count">22K</span>
           </div>
           <div class="border-line"></div>
-          <div className="followers">
+          <div className="er-followers">
             <span className="followers-letter">ER</span>
             <span className="followers-count">Good</span>
           </div>
           <div class="border-line"></div>
-          <div className="followers">
+          <div className="price-range">
             <span className="followers-letter">Price Range</span>
             <span className="followers-count">$1000-5000$</span>
           </div>
-          <div className="select">
-            <img src="img/select.png" className="select-image"></img>
-          </div>
+          
         </div>
+        <div className="select">
+            <img src="img/Rectangle 55.png" className="select-image"></img>
+          </div>
       </div>
     </>
   );

@@ -8,7 +8,7 @@
 
   .btn-ls-influencers {
     float: right;
-    width: 11vw;
+    width: 15vw;
     height: 3.2vh;
     margin-top: 1.7vh;
     margin-right: 58px;
@@ -69,15 +69,24 @@
 
   @media (min-width: $md) {
     .list-influencers {
-      margin-left: -4vw;
-      margin-top: -1vh;
-      font-size: 10px;
+      font-size: 12px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
     }
   }
 
   @media (min-width: $xl) {
     .list-influencers {
       font-size: $font-md;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      line-height: 2.7vh;
     }
   }
 
@@ -91,9 +100,14 @@
     }
 
     .list-influencers {
-      margin-left: -4vw;
-      margin-top: -2.1vh;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      position: absolute;
       font-size: $font-lg;
+      line-height: 2.7vh;
     }
   }
 }

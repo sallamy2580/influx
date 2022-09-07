@@ -14,7 +14,65 @@ const Discover = ({}) => {
           Discover The Biggest List Of Over Vetted Crypto Infulencers
         </span>
         <div className="social-user-info">
-          <div className="col-md-3 social-link"></div>
+          <div className="col-md-3 social-link">
+            {/* <div className="link-area">
+              <div className="link-select-group">
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex' }}>
+                  <img src="img/logos_twitter_icon.png"></img>
+                </div>
+                <div className="col-md-6" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <span className="link-title">Twitter</span>
+                </div>
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
+                </div>
+              </div>
+              <div className="link-select-group">
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex' }}>
+                  <img src="img/logos_twitter_icon.png"></img>
+                </div>
+                <div className="col-md-6" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <span className="link-title">Instagram</span>
+                </div>
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
+                </div>
+              </div>
+              <div className="link-select-group">
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex' }}>
+                  <img src="img/logos_telegram.png"></img>
+                </div>
+                <div className="col-md-6" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <span className="link-title">Telegram</span>
+                </div>
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
+                </div>
+              </div>
+              <div className="link-select-group">
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex' }}>
+                  <img src="img/logos_youtube-icon.png"></img>
+                </div>
+                <div className="col-md-6" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <span className="link-title">Youtube</span>
+                </div>
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
+                </div>
+              </div>
+              <div className="link-select-group">
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex' }}>
+                  <img src="img/akar-icons_tiktok-fill.png"></img>
+                </div>
+                <div className="col-md-6" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <span className="link-title">Tiktok</span>
+                </div>
+                <div className="col-md-3" style={{ justifyContent: 'center', display: 'flex'}}>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
+                </div>
+              </div>
+            </div> */}
+          </div>
           <div className="col-md-8 user-info"></div>
         </div>
         <div className="social-user-info-merged"></div>
@@ -54,15 +112,17 @@ const Discover = ({}) => {
           </div>
         </div>
         <div className="influencers scrollbar scrollbar-primary">
+        <Card name="NAME" followers={123} icon="img/user_4.png" />
+            <Card name="NAME" followers={123} icon="img/user_5.png" />
+            <Card name="NAME" followers={123} icon="img/user_6.png" />
+        <Card name="NAME" followers={123} icon="img/user_1.png" className="card"/>
+            <Card name="NAME" followers={123} icon="img/user_2.png" />
+            <Card name="NAME" followers={123} icon="img/user_3.png" />
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <Card name="AAA" followers={123} icon="img/user_1.png" />
-            <Card name="BBB" followers={123} icon="img/user_2.png" />
-            <Card name="CCC" followers={123} icon="img/user_3.png" />
+            
           </div>
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <Card name="DDD" followers={123} icon="img/user_4.png" />
-            <Card name="EEE" followers={123} icon="img/user_5.png" />
-            <Card name="FFF" followers={123} icon="img/user_6.png" />
+            
           </div>
         </div>
       </div>
